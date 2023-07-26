@@ -72,4 +72,47 @@ lvim.plugins = {
   -- "MunifTanjim/nui.nvim",
   -- "jackMort/ChatGPT.nvim",
   -- "Bryley/neoai.nvim"
+
+  'mbbill/undotree',
+  "rebelot/kanagawa.nvim",
+  { "bennypowers/nvim-regexplainer", ft = { "html", "javascript", "javascriptreact", "typescript", "typescriptreact" }},
+  { "nvim-treesitter/nvim-treesitter", dependencies = { "HiPhish/nvim-ts-rainbow2" }, opts = { rainbow = { enable = true } } },
+  { "nvim-treesitter/nvim-treesitter-refactor", after = "nvim-treesitter", dependencies = "nvim-treesitter/nvim-treesitter" },
+  { "nvim-treesitter/nvim-treesitter-textobjects", after = "nvim-treesitter", dependencies = "nvim-treesitter/nvim-treesitter" },
+  { "ThePrimeagen/refactoring.nvim", dependencies = { "nvim-lua/plenary.nvim", "nvim-treesitter/nvim-treesitter" } },
+  { "m4xshen/smartcolumn.nvim", opts = { colorcolumn = 120, disabled_filetypes = { "help" } } },
+  { "johmsalas/text-case.nvim" },
+  { "zbirenbaum/neodim",
+    event = "LspAttach",
+    opts = {
+      alpha = 0.75,
+      blend_color = "#000000",
+      update_in_insert = {
+        enable = true,
+        delay = 100,
+      },
+    hide = {
+      virtual_text = true,
+      signs = true,
+      underline = true,
+      }},
+  },
+  {
+    "folke/noice.nvim",
+    config = function()
+      require("noice").setup() end,
+    requires = {
+      -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
+      "MunifTanjim/nui.nvim",
+      -- OPTIONAL:
+      --   `nvim-notify` is only needed, if you want to use the notification view.
+      --   If not available, we use `mini` as the fallback
+      "rcarriga/nvim-notify",
+      }
+  },
+  { "iamcco/markdown-preview.nvim", build = "cd app && npm install", ft = "markdown" },
+  "m-demare/hlargs.nvim",
+
+  "lunarvim/colorschemes",
+  "NvChad/ui",
 }

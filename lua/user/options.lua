@@ -1,5 +1,6 @@
 -- lvim.colorscheme = "tokyonight-moon"
-lvim.colorscheme = "gruvbox-material"
+lvim.colorscheme = "kanagawa"
+-- lvim.colorscheme = "gruvbox-material"
 lvim.log.level = "warn"
 vim.o.background = "dark"
 vim.g.gruvbox_material_background = "hard"
