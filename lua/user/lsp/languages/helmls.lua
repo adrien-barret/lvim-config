@@ -3,11 +3,8 @@ vim.filetype.add({
     gotmpl = 'helm',
   },
   pattern = {
-    ['/templates/*.yaml'] = 'helm',
-    ['/templates/.tpl'] = 'helm',
-    ['helmfile.yaml'] = 'helm'
+    ['.*/templates/.*%.yaml'] = 'helm',
+    ['.*/templates/.*%.tpl'] = 'helm',
+    ['helmfile.*%.yaml'] = 'helm'
   },
 })
-
-
-print("helmls.lua loaded")
