@@ -1,5 +1,5 @@
 -- lvim.colorscheme = "tokyonight-moon"
-lvim.colorscheme = "kanagawa"
+lvim.colorscheme = "panda"
 -- lvim.colorscheme = "gruvbox-material"
 lvim.log.level = "warn"
 vim.o.background = "dark"

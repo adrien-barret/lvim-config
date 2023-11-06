@@ -73,6 +73,7 @@ lvim.plugins = {
   -- "jackMort/ChatGPT.nvim",
   -- "Bryley/neoai.nvim"
 
+  {"markvincze/panda-vim"},
   'mbbill/undotree',
   "rebelot/kanagawa.nvim",
   { "bennypowers/nvim-regexplainer", ft = { "html", "javascript", "javascriptreact", "typescript", "typescriptreact" }},
@@ -114,5 +115,10 @@ lvim.plugins = {
   "m-demare/hlargs.nvim",
 
   "lunarvim/colorschemes",
-  "NvChad/ui",
+  -- "NvChad/ui",
+  {
+    'nvim-orgmode/orgmode', 
+    config = function() 
+      require('orgmode').setup() end }
+
 }

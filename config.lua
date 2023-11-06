@@ -12,6 +12,7 @@ reload "user.whichkey"
 reload "user.inlay-hints"
 reload "user.functions"
 reload "user.dial"
+reload "user.org"
 
 -- reload "user.chatgpt"
 -- reload "user.neoai"

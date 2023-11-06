@@ -42,10 +42,10 @@ map({"n", "v"}, "<leader>y", "[[\"+y]]", opts)
 map("n", "<leader>Y", [["+Y]], opts)
 
 -- replace from actual  world
-map("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+map("n", "<m-r>", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
 -- Toggle undotree
-map("n", "<leader>u", vim.cmd.UndotreeToggle)
+map("n", "<leader><leader>u", vim.cmd.UndotreeToggle)
 
 
 
